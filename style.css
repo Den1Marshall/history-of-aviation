@@ -416,7 +416,7 @@ img {
     text-align: center;
     font-size: 70px;
     font-weight: 900;
-    background-image: url(img/planess.png);
+    background-image: url(img/planess.webp);
     background-size: 13%;
     padding: 20px 0;
     margin-bottom: 80px;
@@ -478,12 +478,13 @@ img {
     font-size: 19px;
     text-decoration: none;
     transition: .2s all;
-    color: rgba(0, 153, 255, 1);
+    color: #fff;
 }
 
 .link:hover, .link:focus, .link1:hover, .link1:focus, .link2:hover, .link2:focus {
     transform: scale(1.2);
-    margin-left: 30px;
+    margin-left: 15px;
+    color: #0085ad
 }
 
 .bottom {
