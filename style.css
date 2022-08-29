@@ -418,7 +418,6 @@ img {
     font-weight: 900;
     background-image: url(img/planess.webp);
     background-size: 150px;
-    padding: 20px 0;
     margin-bottom: 80px;
 }
 
@@ -441,13 +440,21 @@ img {
 
 /* Text start */
 
-.text {
-    font-size: 25px;
-    line-height: 40px;
+.content {
     margin: 0 20px 80px 20px;
 }
 
-.text::first-letter {
+.text {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.text.letter {
+    text-indent: 20px;
+}
+
+.text.letter::first-letter {
     font-size: 50px;
 }
 
@@ -500,26 +507,41 @@ img {
 @media screen and (max-width:600px) {
     .flex-container {
         flex-direction: column;
-        margin: 15px 20px 30px 20px;
+        margin: 0 20px 30px 20px;
         justify-content: space-around;
+        height: 100vh;
     }
 
     .title {
         margin-bottom: 30px;
+        font-size: 60px;
     }
 
     .subtitle {
         width: 80%;
         margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 38px;
     }
 
     .text {
         margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     .bottom {
         padding-top: 15px;
         font-size: 14px;
+        font-size: 12px;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+
+    .link {
+        font-size: 15px;
     }
 }
 
@@ -529,7 +551,7 @@ img {
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1200) {
     .subtitle {
         width: 50%;
     }
